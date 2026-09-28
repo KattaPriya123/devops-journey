@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom & Petal - Flower Bouquet Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            color: #333;
+            background-color: #fdfbf7;
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d81b60;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #d81b60;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background: #d81b60;
+            color: #fff;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ad1457;
+        }
+        .section-title {
+            text-align: center;
+            margin: 50px 0 20px;
+            font-size: 32px;
+            color: #222;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0 10% 50px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 15px 0 5px;
+            font-size: 20px;
+        }
+        .card p {
+            color: #d81b60;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Blossom & Petal</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Fresh & Beautiful Bouquets</h1>
+        <p>Handcrafted floral arrangements delivered right to your door.</p>
+        <a href="#shop" class="btn">Explore Bouquets</a>
+    </section>
+
+    <h2 id="shop" class="section-title">Our Featured Bouquets</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://unsplash.com" alt="Rose Bouquet">
+            <h3>Ruby Rose Romance</h3>
+            <p>$45.00</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="https://unsplash.com" alt="Tulip Bouquet">
+            <h3>Spring Tulip Mix</h3>
+            <p>$35.00</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="https://unsplash.com" alt="Sunflower Bouquet">
+            <h3>Sunny Days Sunshine</h3>
+            <p>$40.00</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Blossom & Petal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
